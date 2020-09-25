@@ -7,17 +7,11 @@ import Navbar from './layouts/navbar/Navbar';
 import HomePage from './pages/HomePage'
 import FeaturePage from './pages/FeaturePage'
 import Footer from './layouts/footer/Footer';
-import styled from 'styled-components'
 
-let BOX = styled.div`
 
-`
 function App() {
 	return (
 		<>
-			{/* <BOX>
-
-			</BOX> */}
 			<BrowserRouter>
 				<EmSpacing nav />
 				<Navbar />
