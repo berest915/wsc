@@ -30,7 +30,7 @@ const SampleCardLayout = () => {
 							services. Connect with your customers easily by using tools to
 							automate, sort and quickly respond to messages.
 						</div>
-						<div className='is-p2' style={{ marginBottom: '3rem' }}>
+						<div className='p1' style={{ marginBottom: '3rem' }}>
 							WhatsApp can also help medium and large businesses provide
 							customer support and deliver important notifications to customers.
 							Learn more about <span className='prevent-space-ignorant'></span>

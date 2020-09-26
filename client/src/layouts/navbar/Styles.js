@@ -35,16 +35,16 @@ export const LeftContainer = styled.div`
 		color: white;
 		.logo {
 			padding-right: 1rem;
-			font-size: 3rem;
+			font-size: 2.5rem;
 		}
 		.title-wrap {
 			display: flex;
 			.title {
-				font-size: 2rem;
+				font-size: 1.5rem;
 				padding-right: 0.5rem;
 			}
 			.caption {
-				font-size: 0.9rem;
+				font-size: 0.8rem;
 				color: ${WHITE_DARK};
 				height: 100%;
 			}

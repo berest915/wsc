@@ -4,17 +4,17 @@ import cardFive from '../../images/cards/card-five.png';
 
 //! css
 const headingFontSize = css`
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 `;
 const paragraphFontSize = css`
-	font-size: 1rem;
+	font-size: 0.875rem;
 `;
 const captionFontSize = css`
 	font-size: 0.7rem;
 	opacity: 0.4;
 `;
 const cardPadding = css`
-	padding: 3rem 3rem 0 3rem;
+	padding: 3rem 7% 0 7%;
 `;
 const contentMarginBig = css`
 	margin: 2rem 0 1.2rem 0;
@@ -25,7 +25,7 @@ const contentMarginSmall = css`
 
 //! styled
 export const Wrapper = styled.div`
-	height: 88vh;
+	height: 800px;
 	text-align: center;
 	display: flex;
 	font-size: 1rem;
@@ -33,6 +33,7 @@ export const Wrapper = styled.div`
 	a {
 		text-decoration: none;
 	}
+	position: relative;
 `;
 export const FlexItem = styled.div`
 	width: 49%;
@@ -45,13 +46,6 @@ export const FlexItem = styled.div`
 export const MarginDiv = styled.div`
 	margin-left: auto;
 `;
-export const FlexItemTwo = styled.div`
-	width: 49%;
-	background-color: #edf8f5;
-	display: flex;
-	flex-direction: column;
-	${props => props.pad && cardPadding};
-`;
 export const ContentDiv = styled.div`
 	width: 100%;
 	${props => props.pad && cardPadding};
@@ -62,7 +56,7 @@ export const ContentDiv = styled.div`
 	}
 	.p1 {
 		${paragraphFontSize};
-		${contentMarginBig};
+		${contentMarginSmall};
 	}
 	.caption {
 		${captionFontSize};
@@ -78,18 +72,17 @@ export const FirstImage = styled.div`
 	background-image: url(${cardZero});
 	background-position: 50% 0%;
 	background-repeat: no-repeat;
-	background-size: auto 354px;
+	background-size: auto 482px;
 	height: 354px;
 	width: 100%;
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 `;
 export const SecondImage = styled.div`
 	background-image: url(${cardFive});
-	background-position: 50% 0%;
 	background-repeat: no-repeat;
-	background-size: auto 254px;
-	height: 254px;
+	background-size: auto 354px;
+	height: 354px;
 	width: 100%;
 `;
