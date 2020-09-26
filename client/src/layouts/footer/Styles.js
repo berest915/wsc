@@ -9,16 +9,25 @@ export const Wrapper = styled.div`
 		width: 25%;
 	}
 	.title {
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 		color: ${FOOTER_FONT_COLOR_TWO};
 	}
 
 	a {
 		color: ${FOOTER_FONT_COLOR_ONE};
-		font-size: 0.875rem;
+		font-size: 0.8rem;
 		text-decoration: none;
 		:hover {
 			text-decoration: underline;
+		}
+	}
+	@media (max-width: 800px){
+		transition: all 0.3s ease 0s;
+		.title{
+			font-size: 0.65rem;
+		}
+		a{
+			font-size: 0.75rem;
 		}
 	}
 `;
