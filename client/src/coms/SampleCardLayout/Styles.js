@@ -1,88 +1,87 @@
-import styled, { css } from 'styled-components';
-import cardZero from '../../images/cards/card-zero.png';
-import cardFive from '../../images/cards/card-five.png';
-
-//! css
-const headingFontSize = css`
-	font-size: 1.5rem;
-`;
-const paragraphFontSize = css`
-	font-size: 0.875rem;
-`;
-const captionFontSize = css`
-	font-size: 0.7rem;
-	opacity: 0.4;
-`;
-const cardPadding = css`
-	padding: 3rem 7% 0 7%;
-`;
-const contentMarginBig = css`
-	margin: 2rem 0 1.2rem 0;
-`;
-const contentMarginSmall = css`
-	margin: 1rem 0 0.3rem 0;
-`;
+import styled from 'styled-components';
 
 //! styled
 export const Wrapper = styled.div`
-	height: 800px;
+	min-height: 700px;
 	text-align: center;
 	display: flex;
 	font-size: 1rem;
 	line-height: 1.5rem;
-	a {
-		text-decoration: none;
-	}
-	position: relative;
 `;
 export const FlexItem = styled.div`
-	width: 49%;
-	background-color: #d0e9ea;
-	background-color: ${props => props.bgColor === '1' ? '#d0e9ea':'#edf8f5'};
+	width: 50%;
+	margin-right: 10px;
 	display: flex;
 	flex-direction: column;
-	${props => props.pad && cardPadding};
-`;
-export const MarginDiv = styled.div`
-	margin-left: auto;
+	background-color: ${props => props.bgColor};
+	padding-top: ${props => props.padTop};
+	padding-bottom: ${props => props.padBtm};
+
+	${props =>
+		props.cardIndex === '1' &&
+		`
+			position: relative;
+			padding-bottom: 364px;
+	`};
 `;
 export const ContentDiv = styled.div`
 	width: 100%;
-	${props => props.pad && cardPadding};
+	padding: 0 7%;
 	display: flex;
 	flex-direction: column;
+	order: ${props => props.flexOrder};
 	.title {
-		${headingFontSize};
+		font-size: 1.4rem;
+		font-weight: 300;
+		margin-bottom: 25px;
+		${props => props.cardIndex === '2' && `order: 2`};
+	}
+	.p {
+		font-size: 0.875rem;
+		a {
+			text-decoration: none;
+		}
 	}
 	.p1 {
-		${paragraphFontSize};
-		${contentMarginSmall};
+		${props => props.cardIndex === '1' && `margin-bottom: 1rem;`}
+		${props => props.cardIndex === '2' && `order: 3;`}
 	}
-	.caption {
-		${captionFontSize};
-		${props => props.nFlexItem === '2' && contentMarginSmall};
+	.p2 {
+		margin-bottom: 50px;
+	}
+	.minor-title {
+		font-size: 0.7rem;
+		opacity: 0.5;
+		margin-top: 4px;
+		margin-bottom: 6px;
+		${props => props.cardIndex === '2' && `order: 1`};
 	}
 `;
-export const ImageRelativeContainer = styled.div`
-	flex-grow: 1;
-	position: relative;
-	overflow: hidden;
-`;
-export const FirstImage = styled.div`
-	background-image: url(${cardZero});
+export const ImageDiv = styled.div`
+	order: ${props => props.flexOrder};
+	background-image: url(${props => props.srcImage});
+	background-repeat: no-repeat;
 	background-position: 50% 0%;
-	background-repeat: no-repeat;
-	background-size: auto 482px;
-	height: 354px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-`;
-export const SecondImage = styled.div`
-	background-image: url(${cardFive});
-	background-repeat: no-repeat;
-	background-size: auto 354px;
-	height: 354px;
-	width: 100%;
+
+	${props => {
+		switch (props.cardIndex) {
+			case '1':
+				return `
+					background-size: auto 478px;
+					height: 350px;
+					width: 100%;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+				`;
+			case '2':
+				return `
+					background-size: auto 354px;
+					height: 354px;
+					width: 100%;
+				`;
+			default:
+				return ``;
+		}
+	}}
 `;
