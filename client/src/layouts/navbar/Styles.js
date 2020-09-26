@@ -23,6 +23,9 @@ export const Nav = styled.div`
 	@media (max-width: 1080px) {
 		padding: 2vh 4%;
 	}
+	@media (max-width: 670px) {
+		background-color: #1ebea5;
+	}
 `;
 export const LeftContainer = styled.div`
 	.logo-title {
