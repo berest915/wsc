@@ -22,7 +22,7 @@ const Footer = () => {
 						</div>
 						<div className='w-25'>
 							<div>
-								<a href='https://www.google.com' alt=''>
+								<a href='https://www.whatsapp.com/legal/' alt='privacy-legal'>
 									Privacy & Terms
 								</a>
 							</div>
