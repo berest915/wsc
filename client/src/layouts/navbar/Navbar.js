@@ -31,7 +31,7 @@ const Navbar = () => {
 			<Nav>
 				<LeftContainer>
 					<Link to='/' className='logo-title nav-link'>
-						<i className='logo fab fa-whatsapp'></i>
+						<i className='logo fab fa-whatsapp' aria-hidden="false"></i>
 						<div className='title-wrap'>
 							<span className='title' >WsChat</span>
 							<span className='caption' >clone*</span>
@@ -39,7 +39,7 @@ const Navbar = () => {
 					</Link>
 				</LeftContainer>
 				<RightContainer>
-					<Link to='/feature' className='nav-link'>
+					<Link to='/feature' className='nav-link first-child'>
 						WSCHAT WEB
 					</Link>
 					<Link to='/feature' className='nav-link'>

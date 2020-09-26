@@ -103,7 +103,7 @@ export const BrickImage = styled.div`
 				return `
 					background-size: auto 386px;
 					height: 386px;
-					background-position-x: 80px; 
+					background-position-x: 100%; 
 				`;
 			case '4':
 				return `

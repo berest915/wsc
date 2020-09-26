@@ -19,6 +19,7 @@ function App() {
           <Route exact path='/' component={HomePage} />
           <Route exact path='/feature' component={FeaturePage} />
 				</Switch>
+				
 				<Footer />
 			</BrowserRouter>
 		</>
