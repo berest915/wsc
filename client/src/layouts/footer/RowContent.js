@@ -6,7 +6,7 @@ const RowContent = ({row}) => {
 	return (
 		<>
 			<div className='row'>
-				<a href={link} alt=''>
+				<a href={link} rel='noopener noreferrer' target='_blank'>
 					{text}
 				</a>
 			</div>

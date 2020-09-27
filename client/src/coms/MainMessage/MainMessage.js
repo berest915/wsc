@@ -17,16 +17,30 @@ const MainMessage = () => {
 							* Data charges may apply. Contact your provider for details.
 						</div>
 						<IContainer>
-							<i className='fab fa-android fa-fw' />
-							<span>Android</span>
+							<a
+								href='https://play.google.com/store/apps/details?id=com.whatsapp'
+								rel='noopener noreferrer'
+								target='_blank'
+							>
+								<i className='fab fa-android fa-fw' />
+								<span>Android</span>
+							</a>
 						</IContainer>
-						<IContainer>
+						<IContainer>	<a
+								href='http://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8'
+								rel='noopener noreferrer'
+								target='_blank'
+							>
 							<i className='fab fa-apple fa-fw'></i>
-							<span>iPhone</span>
+							<span>iPhone</span></a>
 						</IContainer>
-						<IContainer>
-						<i className="fas fa-desktop fa-fw"></i>
-							<span>Mac or Windows PC</span>
+						<IContainer>	<a
+								href='https://www.whatsapp.com/download'
+								rel='noopener noreferrer'
+								target='_blank'
+							>
+							<i className='fas fa-desktop fa-fw'></i>
+							<span>Mac or Windows PC</span></a>
 						</IContainer>
 					</ContentDiv>
 					<div className='w-40'>

@@ -6,6 +6,7 @@ import { EmSpacing } from './AppGlobalCss';
 import Navbar from './layouts/navbar/Navbar';
 import HomePage from './pages/HomePage'
 import FeaturePage from './pages/FeaturePage'
+import FaqPage from './pages/FaqPage'
 import Footer from './layouts/footer/Footer';
 
 
@@ -18,6 +19,7 @@ function App() {
 				<Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/feature' component={FeaturePage} />
+					<Route exact path='/faq' component={FaqPage} />
 				</Switch>
 				
 				<Footer />

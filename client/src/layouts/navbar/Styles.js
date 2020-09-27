@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NAV_BG, NAV_Z_INDEX, WHITE_VARIANT } from '../../const/css-constant';
+import { NAV_BG, NAV_Z_INDEX, WHITE_VARIANT, WS_GREEN } from '../../const/css-constant';
 
 const { WHITE_DARK } = WHITE_VARIANT;
 
@@ -24,7 +24,7 @@ export const Nav = styled.div`
 		padding: 2vh 4%;
 	}
 	@media (max-width: 670px) {
-		background-color: #1ebea5;
+		background-color: ${WS_GREEN};
 	}
 `;
 export const LeftContainer = styled.div`

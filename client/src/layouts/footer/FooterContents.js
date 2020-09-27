@@ -51,7 +51,7 @@ export const FooterContents = [
 			},
 			{
 				text: 'Blog',
-				link: 'https://www.blog.whatsapp.com/',
+				link: 'https://blog.whatsapp.com/',
 			},
 			{
 				text: 'WhatsApp Stories',
@@ -83,7 +83,7 @@ export const FooterContents = [
 		rows: [
 			{
 				text: 'FAQ',
-				link: 'https://www.faq.whatsapp.com/',
+				link: 'https://faq.whatsapp.com/',
 			},
 			{
 				text: 'Twitter',

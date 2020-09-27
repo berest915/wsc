@@ -45,7 +45,7 @@ const Navbar = () => {
 					<Link to='/feature' className='nav-link'>
 						FEATURES
 					</Link>
-					<Link to='/feature' className='nav-link'>
+					<Link to='/faq' className='nav-link'>
 						FAQ
 					</Link>
 					<Link to='/feature' className='nav-link'>
