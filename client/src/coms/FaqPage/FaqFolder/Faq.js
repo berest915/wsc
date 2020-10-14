@@ -1,11 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-const Faq = () => {
-  return (
-    <>
-      
-    </>
-  )
-}
+import Accordion from './Accordion';
+import { AccordionPropsChildren } from './Styles';
 
-export default Faq
+const Faq = ({ faq, index, toggleOpenClose }) => {
+	return (
+		<>
+			<Accordion
+				title={faq.title}
+				isOpen={faq.isOpen}
+				onClickIndex={index}
+				toggleOpenClose={toggleOpenClose}
+			>
+				<AccordionPropsChildren>{faq.content}</AccordionPropsChildren>
+			</Accordion>
+		</>
+	);
+};
+
+export default Faq;

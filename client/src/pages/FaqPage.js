@@ -1,12 +1,12 @@
 import React from 'react'
 import Search from '../coms/FaqPage/SearchFolder/Search'
-import Faq from '../coms/FaqPage/FaqFolder/Faq'
+import Faqs from '../coms/FaqPage/FaqFolder/Faqs'
 
 const FaqPage = () => {
   return (
     <>
       <Search />
-      <Faq />
+      <Faqs />
     </>
   )
 }

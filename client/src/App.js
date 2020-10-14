@@ -4,11 +4,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import { EmSpacing } from './AppGlobalCss';
 import Navbar from './layouts/navbar/Navbar';
-import HomePage from './pages/HomePage'
-import FeaturePage from './pages/FeaturePage'
-import FaqPage from './pages/FaqPage'
+import HomePage from './pages/HomePage';
+import FeaturePage from './pages/FeaturePage';
+import FaqPage from './pages/FaqPage';
 import Footer from './layouts/footer/Footer';
-
 
 function App() {
 	return (
@@ -29,3 +28,4 @@ function App() {
 }
 
 export default App;
+
