@@ -26,7 +26,7 @@ const Faqs = () => {
 		<div style={{backgroundColor: 'rgb(248,249,250)'}}>
 			<FaqContainer>
 				{FaqItemStates.map((faq, i) => (
-					<Faq faq={faq} index={i} toggleOpenClose={toggleOpenClose} />
+					<Faq key={i} index={i} faq={faq} toggleOpenClose={toggleOpenClose} />
 				))}
 			</FaqContainer>
 			</div>

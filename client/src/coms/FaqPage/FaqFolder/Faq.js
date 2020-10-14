@@ -3,6 +3,8 @@ import React from 'react';
 import Accordion from './Accordion';
 import { AccordionPropsChildren } from './Styles';
 
+import ItemLinks from './ItemLinks';
+
 const Faq = ({ faq, index, toggleOpenClose }) => {
 	return (
 		<>
@@ -12,7 +14,15 @@ const Faq = ({ faq, index, toggleOpenClose }) => {
 				onClickIndex={index}
 				toggleOpenClose={toggleOpenClose}
 			>
-				<AccordionPropsChildren>{faq.content}</AccordionPropsChildren>
+				{!Array.isArray(faq.content) ? (
+					<AccordionPropsChildren>{faq.content}</AccordionPropsChildren>
+				) : (
+					<div>
+						{faq.content.map((item, index) => (
+							<ItemLinks key={index} item={item} />
+						))}
+					</div>
+				)}
 			</Accordion>
 		</>
 	);

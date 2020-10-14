@@ -1,5 +1,25 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { WS_GREEN } from '../../../const/css-constant';
+
+const accordionPropsPadding = css`
+	padding: 18px 30px;
+`;
+const accordionLinkStyle = css`
+	border-bottom: 1px solid lavender;
+	:hover {
+		cursor: pointer;
+	}
+	.link {
+		text-decoration: none;
+		color: gray;
+		${accordionPropsPadding};
+		display: block;
+		:hover{
+			transition: color 1s ease;
+			color: black;
+		}
+	}
+`;
 
 export const FaqContainer = styled.div`
 	width: 84%;
@@ -28,15 +48,14 @@ export const AccordionTitle = styled.div`
 		background-color: lavender;
 	}
 	${props => props.isOpen && 'background-color: lavender'};
-
-
 `;
 
 export const AccordionPropsChildren = styled.div`
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 14px;
-	padding: 18px;
+	${props => !props.isLinks && accordionPropsPadding};
+	${props => props.isLinks && accordionLinkStyle}
 `;
 export const AccordionContent = styled.div`
 	background-color: white;
