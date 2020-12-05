@@ -16,9 +16,9 @@ function App() {
 				<EmSpacing nav />
 				<Navbar />
 				<Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route exact path='/feature' component={FeaturePage} />
-					<Route exact path='/faq' component={FaqPage} />
+          <Route exact path='/wsc/' component={HomePage} />
+          <Route exact path='/wsc/feature' component={FeaturePage} />
+					<Route exact path='/wsc/faq' component={FaqPage} />
 				</Switch>
 				
 				<Footer />

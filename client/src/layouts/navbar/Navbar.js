@@ -25,7 +25,7 @@ const Navbar = () => {
     <>
       <Nav>
         <LeftContainer>
-          <Link to="/" className="logo-title nav-link">
+          <Link to="/wsc" className="logo-title nav-link">
             <i className="logo fab fa-whatsapp" aria-hidden="false"></i>
             <div className="title-wrap">
               <span className="title">WsChat</span>
@@ -34,7 +34,7 @@ const Navbar = () => {
           </Link>
         </LeftContainer>
         <RightContainer>
-          <Link to="/" className="nav-link first-child">
+          <Link to="/wsc" className="nav-link first-child">
             HOME
           </Link>
           <a
@@ -46,10 +46,10 @@ const Navbar = () => {
           >
             WSCHAT WEB
           </a>
-          <Link to="/feature" className="nav-link">
+          <Link to="/wsc/feature" className="nav-link">
             FEATURES
           </Link>
-          <Link to="/faq" className="nav-link">
+          <Link to="/wsc/faq" className="nav-link">
             FAQ
           </Link>
 

@@ -6,7 +6,7 @@ const ExploreFeature = () => {
 	return (
 		<>
 			<Div>
-				<Link to='/feature'>EXPLORE FEATURES</Link>
+				<Link to='/wsc/feature'>EXPLORE FEATURES</Link>
 			</Div>
 		</>
 	);
