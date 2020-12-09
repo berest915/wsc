@@ -10,6 +10,11 @@ const { WHITE_DARK } = WHITE_VARIANT;
 
 export const Nav = styled.div`
   box-shadow: 0 2px 5px 0 lightgray;
+  font-family: Roboto "san-serif";
+  font-weight: 500;
+  color: ${WHITE_DARK};
+  background-color: ${NAV_BG};
+
   position: fixed;
   z-index: ${NAV_Z_INDEX};
   top: 0;
@@ -18,20 +23,20 @@ export const Nav = styled.div`
   width: 100%;
   height: 12vh;
   max-height: 12vh;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: Roboto "san-serif";
-  font-weight: 500;
-  color: ${WHITE_DARK};
-  background-color: ${NAV_BG};
+
   @media (max-width: 1080px) {
     padding: 2vh 4%;
   }
+
   @media (max-width: 670px) {
     background-color: ${WS_GREEN};
   }
 `;
+
 export const LeftContainer = styled.div`
   .logo-title {
     display: flex;
@@ -58,6 +63,7 @@ export const LeftContainer = styled.div`
   .nav-link {
     text-decoration: none;
   }
+
   @media (max-width: 1000px) {
     .logo-title {
       transition: all 0.3s ease 0s;
@@ -75,6 +81,7 @@ export const LeftContainer = styled.div`
       }
     }
   }
+
   @media (max-width: 840px) {
     .logo-title {
       .logo {
@@ -94,9 +101,9 @@ export const LeftContainer = styled.div`
     }
   }
 `;
+
 export const RightContainer = styled.div`
   margin-left: auto;
-
   display: flex;
   font-size: 0.75rem;
   .nav-link {
@@ -110,6 +117,7 @@ export const RightContainer = styled.div`
     transition: all 0.3s ease 0s;
     color: white;
   }
+
   @media (min-width: 1000px) {
     .nav-link {
       font-size: 1rem;
@@ -125,3 +133,4 @@ export const RightContainer = styled.div`
     }
   }
 `;
+

@@ -20,7 +20,6 @@ function App() {
           <Route exact path='/wsc/feature' component={FeaturePage} />
 					<Route exact path='/wsc/faq' component={FaqPage} />
 				</Switch>
-				
 				<Footer />
 			</BrowserRouter>
 		</>
