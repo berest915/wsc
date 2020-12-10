@@ -50,6 +50,10 @@ export const MansoryWrapper = styled.div`
 	a {
 		text-decoration: none;
 	}
+	@media (max-width: 670px){
+		max-height: none;
+		margin: 0;
+	}
 `;
 export const MansoryBrick = styled.div`
 	margin: 0 8px 8px 0;
@@ -60,6 +64,10 @@ export const MansoryBrick = styled.div`
 	background-color: ${props => props.bgColor};
 	padding-top: ${props => props.padTop};
 	padding-bottom: ${props => props.padBottom};
+	@media (max-width: 670px){
+		width: 100%;
+		margin: 0;
+	}
 `;
 export const BrickContent = styled.div`
 	width: 100%;
@@ -84,14 +92,17 @@ export const BrickImage = styled.div`
 	background-position: 50% 0%;
 	background-repeat: no-repeat;
 	width: 100%;
-
+	transition: height 0.3s ease;
 	/* diff-styles */
 	${props => {
 		switch (props.mansoryIndex) {
 			case '1':
 				return `
 					background-size: contain;
-					height: 599px;
+					height: 599px;	
+					@media (max-width: 330px){
+						height: 350px;
+					}
 				`;
 			case '2':
 				return `
@@ -104,34 +115,57 @@ export const BrickImage = styled.div`
 					background-size: auto 386px;
 					height: 386px;
 					background-position-x: 100%; 
+					
+					@media (max-width: 330px){
+						background-size: auto 190px;
+						height: 190px;
+					}
 				`;
 			case '4':
 				return `
 					background-size: auto 319px;
 					height: 320px;
+					@media (max-width: 330px){
+						background-size: auto 190px;
+						height: 190px;
+					}
 				`;
 			case '5':
 				return `
 					background-size: auto 300px;
 					height: 300px;
 					border-radius: 50%;
+					@media (max-width: 330px){
+						background-size: auto 190px;
+						height: 190px;
+					}
 				`;
 			case '6':
 				return `
 					background-size: auto 271px;
 					height: 271px;
+					@media (max-width: 330px){
+						background-size: auto 190px;
+						height: 190px;
+					}
 				`;
 			case '7':
 				return `
 					background-size: contain;
 					height: 253px;
 					width: 100%;
+					@media (max-width: 330px){
+						height: 190px;
+					}
 				`;
 			case '8':
 				return `
 					background-size: contain;
 					height: 202px;
 					width: 100%;
+					@media (max-width: 330px){
+						height: 190px;
+					}
 				`;
 			default:
 				return `
