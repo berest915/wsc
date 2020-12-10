@@ -32,9 +32,6 @@ export const Nav = styled.div`
     padding: 2vh 4%;
   }
 
-  @media (max-width: 670px) {
-    background-color: ${WS_GREEN};
-  }
 `;
 
 export const LeftContainer = styled.div`

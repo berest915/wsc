@@ -17,10 +17,10 @@ const Footer = () => {
 				</MainCardContainer>
 				<MainCardContainer darker='yes'>
 					<BottomContainer>
-						<div className='w-25'>
+						<div style={{ paddingRight: '1rem' }}>
 							<div className='title'>2020 © WhatsApp Inc.</div>
 						</div>
-						<div className='w-25'>
+						<div>
 							<div>
 								<a
 									href='https://www.whatsapp.com/legal/'

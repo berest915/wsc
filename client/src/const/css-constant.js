@@ -1,7 +1,7 @@
 // // BRIGHT > DARKER > DARKER +1
 export const WS_GREEN = "#1ebea5";
 
-export const NAV_BG = "rgba(49, 150, 134, 0.97)";
+export const NAV_BG = "rgba(49, 150, 134, 0.93)";
 
 export const WHITE_VARIANT = {
   WHITE_BRIGHT: "#EBECF8",

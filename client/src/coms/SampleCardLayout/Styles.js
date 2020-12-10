@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
 	display: flex;
 	font-size: 1rem;
 	line-height: 1.5rem;
+
+	@media (max-width: 670px) {
+		flex-direction: column;
+	}
 `;
 export const FlexItem = styled.div`
 	width: 50%;
@@ -23,7 +27,12 @@ export const FlexItem = styled.div`
 			position: relative;
 			padding-bottom: 364px;
 	`};
+
+	@media (max-width: 670px) {
+		width: 100%;
+	}
 `;
+
 export const ContentDiv = styled.div`
 	width: 100%;
 	padding: 0 7%;

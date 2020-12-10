@@ -7,13 +7,12 @@ const { FOOTER_BG_ONE, FOOTER_BG_TWO } = FOOTER;
 
 export const EmSpacing = styled.div`
   width: 100%;
-  position: relative;
   ${props => props.nav && `height: 12vh`};
 `;
 
 export const MainCardContainer = styled.div`
+/* 0 2% || 0 8% */
 	padding: ${props => (props.pad === "minor" ? PAD_MINOR : PAD_MAJOR)};
-	
   background-color: ${props => {
     switch (props.darker) {
       case "yes":

@@ -35,16 +35,40 @@ export const TopContainer = styled.div`
 	padding-top: 53px;
 	padding-bottom: 40px;
 	display: flex;
+	flex-wrap: wrap;
+
+
 	.row {
 		margin-bottom: 6px;
 	}
 	.title {
 		margin-bottom: 1.4rem;
 	}
+	.flex-wrap-width{
+		width: 25%;
+	}
+	@media (max-width: 670px){
+		.flex-wrap-width {
+			width: 50%;
+			padding: 1rem 0;
+			border-bottom: 1px solid rgba(255,255,255,0.3);
+		}
+	}
+	@media (max-width: 350px){
+		.flex-wrap-width {
+			width: 100%;
+			margin-left: 1.5rem;
+		}
+	}
 `;
 
 export const BottomContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 23px 0;
+	padding: 23px 0;
+	
+	@media (max-width: 670px){
+		flex-direction: column;
+		align-items: initial;
+	}
 `;
