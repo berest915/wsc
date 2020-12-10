@@ -1,20 +1,9 @@
 const FaqItems = [
 	{
 		isOpen: false,
-		title: 'What information could be found on this FAQ ?',
+		title: 'Information on this FAQ ?',
 		content:
 			'This is ui-clone version of WhatsApp site. It consists of general FAQ section while valid links are provided as directing to the real WhatsApp FAQ-links.',
-	},
-	{
-		isOpen: false,
-		title: 'Coronavirus product changes',
-		content: [
-			{
-				linkTitle: 'About forwarding limits',
-				link:
-					'https://faq.whatsapp.com/general/coronavirus-product-changes/about-forwarding-limits/',
-			},
-		],
 	},
 	{
 		isOpen: false,

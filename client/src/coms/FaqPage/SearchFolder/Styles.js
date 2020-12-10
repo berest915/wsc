@@ -10,19 +10,33 @@ export const Background = styled.div`
 	background-position: 50% 50%;
 	width: 100%;
 	height: 270px;
+	@media (max-width: 670px){
+		height: 100%;
+	}
 `;
 export const Container = styled.div`
 	padding-top: 36px;
 	margin: 0 7%;
-  text-align: center;
+	text-align: center;
+	
+	@media (max-width: 670px){
+		padding: 20px 0;
+		
+	}
+
 	.title,
 	.text {
 		color: ${WS_GREEN};
+		@media (max-width: 670px){
+			display: none;
+		}
 	}
 	.title {
 		font-size: 30px;
     font-weight: 300;
 		margin-bottom: 36px;
+
+		
 	}
 	.text {
 		font-size: 16px;
@@ -40,7 +54,12 @@ export const Container = styled.div`
       opacity: 0.5;
       ::placeholder {
         opacity: 0.6;
-      }
+			}
+			
+			@media (max-width: 670px){
+				margin-bottom: 0;
+				padding: 0.7rem 2rem;
+			}
 		}
 	}
 `;

@@ -6,11 +6,10 @@ const ItemLinks = ({ item }) => {
   return (
     <AccordionPropsChildren isLinks={true}>
       <a
-        className="link"
+        className="link link-pad"
         href={link}
         rel="noopener noreferrer"
         target="_blank"
-        style={{ padding: "18px 30px" }}
       >
         {linkTitle}
       </a>
