@@ -3,7 +3,6 @@ import {
   NAV_BG,
   NAV_Z_INDEX,
   WHITE_VARIANT,
-  WS_GREEN,
 } from "../../const/css-constant";
 
 const { WHITE_DARK } = WHITE_VARIANT;

@@ -4,6 +4,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 
 import { BurgerDiv, MobileSidebar } from "./BarMenuStyles";
+
 const BarMenuComponent = () => {
   const [sidebar, setSidebar] = useState(false);
 
@@ -20,10 +21,9 @@ const BarMenuComponent = () => {
             <i className="fab fa-whatsapp" />
             <span className="caption">clone*</span>
           </div>
-          <AiIcons.AiOutlineClose
-            className="close-icon"
-            onClick={toggleSidebar}
-          />
+          <div className="close-icon-div" onClick={toggleSidebar}>
+            <AiIcons.AiOutlineClose />
+          </div>
         </li>
         <Link to="/wsc" className="bar-menu-item" onClick={toggleSidebar}>
           HOME

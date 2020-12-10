@@ -31,7 +31,7 @@ export const MobileSidebar = styled.div`
   .close-bar-menu {
     font-size: 2rem;
     height: 12vh;
-    padding: 1rem 4%;
+    padding: 0rem 4%;
 
     display: flex;
     align-items: center;
@@ -44,9 +44,10 @@ export const MobileSidebar = styled.div`
       }
     }
 
-    .close-icon {
+    .close-icon-div{
       margin-left: auto;
-      padding: 5px;
+      font-size: 1.7rem;
+      padding: 10px;
       transition: background-color 0.5s ease;
       :hover {
         cursor: pointer;
@@ -54,6 +55,8 @@ export const MobileSidebar = styled.div`
         color: black;
         border-radius: 5px;
       }
+      display: flex;
+      align-items: center;
     }
   }
 
