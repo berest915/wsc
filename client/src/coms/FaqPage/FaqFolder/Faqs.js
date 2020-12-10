@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-
-import { FaqContainer } from "./Styles";
-
+import { FaqContainer } from "./FaqStyles";
 import FaqItems from "./FaqItems";
 import Faq from "./Faq";
 
@@ -27,7 +25,7 @@ const Faqs = () => {
     <>
       <div style={{ backgroundColor: "rgb(248,249,250)" }}>
         <FaqContainer>
-          <div className='accordion-about' >Frequently Asked Question</div>
+          <div className="accordion-about">Frequently Asked Question</div>
           {FaqItemStates.map((faq, i) => (
             <Faq
               key={i}

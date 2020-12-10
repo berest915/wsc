@@ -1,5 +1,5 @@
 import React from "react";
-import { AccordionPropsChildren } from "./Styles";
+import { AccordionPropsChildren } from "./FaqStyles";
 
 const ItemLinks = ({ item }) => {
   const { linkTitle, link } = item;

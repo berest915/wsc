@@ -11,8 +11,7 @@ export const EmSpacing = styled.div`
 `;
 
 export const MainCardContainer = styled.div`
-/* 0 2% || 0 8% */
-	padding: ${props => (props.pad === "minor" ? PAD_MINOR : PAD_MAJOR)};
+  padding: ${props => (props.pad === "minor" ? PAD_MINOR : PAD_MAJOR)};
   background-color: ${props => {
     switch (props.darker) {
       case "yes":

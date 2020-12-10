@@ -1,8 +1,6 @@
 import React from "react";
-
 import Accordion from "./Accordion";
-import { AccordionPropsChildren } from "./Styles";
-
+import { AccordionPropsChildren } from "./FaqStyles";
 import ItemLinks from "./ItemLinks";
 
 const Faq = ({ faq, index, toggleOpenClose }) => {
@@ -15,14 +13,8 @@ const Faq = ({ faq, index, toggleOpenClose }) => {
         toggleOpenClose={toggleOpenClose}
       >
         {!Array.isArray(faq.content) ? (
-          <AccordionPropsChildren
-            isLinks={false}
-            
-          >
-            <div className='not-link-pad'>
-
-            {faq.content}
-            </div>
+          <AccordionPropsChildren isLinks={false}>
+            <div className="not-link-pad">{faq.content}</div>
           </AccordionPropsChildren>
         ) : (
           <>
