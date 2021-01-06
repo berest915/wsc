@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/wsc/static/css/main.ef2ce160.chunk.css",
-    "main.js": "/wsc/static/js/main.bbe68f7c.chunk.js",
-    "main.js.map": "/wsc/static/js/main.bbe68f7c.chunk.js.map",
+    "main.js": "/wsc/static/js/main.23718770.chunk.js",
+    "main.js.map": "/wsc/static/js/main.23718770.chunk.js.map",
     "runtime-main.js": "/wsc/static/js/runtime-main.62947267.js",
     "runtime-main.js.map": "/wsc/static/js/runtime-main.62947267.js.map",
     "static/js/2.6de892b4.chunk.js": "/wsc/static/js/2.6de892b4.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/wsc/index.html",
     "static/css/main.ef2ce160.chunk.css.map": "/wsc/static/css/main.ef2ce160.chunk.css.map",
     "static/js/2.6de892b4.chunk.js.LICENSE.txt": "/wsc/static/js/2.6de892b4.chunk.js.LICENSE.txt",
-    "static/js/main.bbe68f7c.chunk.js.LICENSE.txt": "/wsc/static/js/main.bbe68f7c.chunk.js.LICENSE.txt",
+    "static/js/main.23718770.chunk.js.LICENSE.txt": "/wsc/static/js/main.23718770.chunk.js.LICENSE.txt",
     "static/media/card-eight.a552dd5e.png": "/wsc/static/media/card-eight.a552dd5e.png",
     "static/media/card-four.c9765b27.png": "/wsc/static/media/card-four.c9765b27.png",
     "static/media/card-one.8c7b5aae.png": "/wsc/static/media/card-one.8c7b5aae.png",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.62947267.js",
     "static/js/2.6de892b4.chunk.js",
     "static/css/main.ef2ce160.chunk.css",
-    "static/js/main.bbe68f7c.chunk.js"
+    "static/js/main.23718770.chunk.js"
   ]
 }
