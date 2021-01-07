@@ -29,7 +29,6 @@ wsc
 │  │   ├── index.html
 │  │   └── manifest.json
 │  ├── package.json
-│  ├── README.md
 │  ├── .gitignore
 │  └── src
 │      ├── coms
